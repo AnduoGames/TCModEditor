@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+.NavText {
+  font-size: 50px !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.popup_inner {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%; 
+  margin: auto;
+  padding-bottom: 25px;
+  background: white;
+  border-radius: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.DialoguePopupForm {
+  margin-top: 25px;
+  width: 90%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.DialoguePopupCloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.ScrollDiv{
+    padding-left: 80px;
+    padding-right: 10px;
+    padding-top: 20px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.DialogueDetailExpressions {
+    display: flex;
+    justify-content: center;
+}
+
+.DialogueDetailExpressions div {
+    width: 33%;
+    margin: 0;
+}
+
+.MidDialogueDetailExpression{
+    margin-left: 10px!important;
+    margin-right: 10px!important;
+}
+
+.BackButton {
+    top: 22px;
+    left: 90px;
+    cursor: pointer;
+}
+
+.InsertLineButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.DialogueDetailHeadline {
+    display: flex;
+}
+
+.DialogueDetailHeadline h1 {
+    margin-left: -45px;
+}
+
+.DialogueDetailHeadline .BackButton {
+    margin-right: auto;
+}
+
+.DialogueDetailHeadline .CenterForcer{
+    margin-left: auto;
+}
+
+.DialogueDetailSaveButton {
+    position: absolute;
+    top: 20px;
+    right: 53px;
+    z-index: 12;
+}
+
+.HiddenLineOptions {
+    display: none;
+}
+
+.ExpandLineOptions {
+    transform: rotateZ(-90deg);
+}
+
+.list-group {
+    position: fixed;
+    max-width: 27%;
+    overflow-y: scroll;
+    max-height: 87%;
+}
+
+.TriggerHorizontalGroup {
+    margin-right: 10px;
 }
